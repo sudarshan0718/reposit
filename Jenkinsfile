@@ -16,6 +16,7 @@ pipeline {
                 '''
             }
         }
+        stage("testing") {
             steps {
                 bat '''
                     call venv\\Scripts\\activate
